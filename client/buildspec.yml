@@ -6,10 +6,12 @@ phases:
   pre_build:
     commands:
       - echo Install Dependencies...
+      - cd client
       - npm install
   build:
     commands:
       - echo Building App...
+      - cd client
       - npm run build
       - echo Building Packages Completed  `date`...
       - aws s3 sync out/ s3://$BUCKET_NAME/ --cache-control max-age=60

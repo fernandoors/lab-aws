@@ -6,10 +6,12 @@ phases:
   pre_build:
     commands:
       - echo Install Dependencies...
+      - cd server
       - npm install
   build:
     commands:
       - echo Building App...
+      - cd server
       - npm run build
     finally:
       - echo Building Packages Completed  `date`...
