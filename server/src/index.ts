@@ -3,7 +3,7 @@ import fastify from 'fastify';
 import { createContext } from './context';
 import { appRouter } from './routers';
 import cors from '@fastify/cors'
-
+console.log(process.env.REF)
 const server = fastify({
   logger: true,
   maxParamLength: 5000,
