@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+  pre_build:
+    commands:
+      - echo Install Dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Building App...
+      - npm run build
+    finally:
+      - echo Building Packages Completed  `date`...

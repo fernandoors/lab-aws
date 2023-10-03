@@ -1,0 +1,18 @@
+version: '3.1'
+services:
+  server:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: server
+    ports:
+      - '3001:3001'
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: bash -c "npm run dev"
+    restart: on-failure:2
+    environment:
+      ENV: dev
+    env_file:
+      - .env

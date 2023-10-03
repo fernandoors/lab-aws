@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+  pre_build:
+    commands:
+      - echo Install Dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Building App...
+      - npm run build
+      - echo Building Packages Completed  `date`...
+      - aws s3 sync out/ s3://$BUCKET_NAME/ --cache-control max-age=60
+      - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"

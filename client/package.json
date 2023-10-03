@@ -1,0 +1,30 @@
+{
+  "name": "movemate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.35.3",
+    "@trpc/client": "^10.38.5",
+    "@trpc/next": "^10.38.5",
+    "@trpc/react-query": "^10.38.5",
+    "@trpc/server": "^10.38.5",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "typescript": "latest"
+  }
+}
