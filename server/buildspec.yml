@@ -16,4 +16,4 @@ phases:
       - echo Building Packages Completed  `date`...
 artifacts:
   files:
-    - "server/dist/*"
+    - "server/dist/**/*"
