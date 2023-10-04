@@ -1,9 +1,10 @@
 #!/bin/bash
-echo "$(date) run before_install.sh: " >>/home/ubuntu/lab-aws/server/deploy.log
+echo pwd
+echo "$(date) run before_install.sh: " >>/home/ubuntu/lab-aws/app/deploy.log
 
-echo "$(date) cd /home/ubuntu/nodejs-aws-codedeploy-pipeline" >>/home/ubuntu/lab-aws/server/deploy.log
-cd /home/ubuntu/lab-aws/server >>/home/ubuntu/lab-aws/server/deploy.log
+echo "$(date) cd /home/ubuntu/lab-aws/app" >>/home/ubuntu/lab-aws/app/deploy.log
+cd /home/ubuntu/lab-aws/app >>/home/ubuntu/lab-aws/app/deploy.log
 
-echo "$(date) npm install" >>/home/ubuntu/lab-aws/server/deploy.log
-npm install >>/home/ubuntu/lab-aws/server/deploy.log
-npm run build >>/home/ubuntu/lab-aws/server/deploy.log
+echo "$(date) npm install" >>/home/ubuntu/lab-aws/app/deploy.log
+npm install >>/home/ubuntu/lab-aws/app/deploy.log
+npm run build >>/home/ubuntu/lab-aws/app/deploy.log
