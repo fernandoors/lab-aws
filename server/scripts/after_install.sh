@@ -6,4 +6,4 @@ cd /home/ubuntu/lab-aws/server >>/home/ubuntu/lab-aws/server/deploy.log
 
 echo 'npm install' >>/home/ubuntu/lab-aws/server/deploy.log
 npm install >>/home/ubuntu/lab-aws/server/deploy.log
-npm build >>/home/ubuntu/lab-aws/server/deploy.log
+npm run build >>/home/ubuntu/lab-aws/server/deploy.log
