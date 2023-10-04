@@ -20,7 +20,7 @@ server.register(fastifyTRPCPlugin, {
 });
 
 server.get('/', async (request, reply) => {
-  return { message: `Hello, world ${new Date().toISOString()}! ${env.URL}` };
+  return { message: `Hello, world ${new Date().toISOString()}! env ${env.URL} from codebuild` };
 });
 
 server.listen({ host: '0.0.0.0', port: 3001 }, (err, address) => {

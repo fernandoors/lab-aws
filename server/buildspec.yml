@@ -12,6 +12,7 @@ phases:
     commands:
       - echo Building App...
       - npm run build
+      - echo ls -lsa
     finally:
       - echo Building Packages Completed  `date`...
 artifacts:
