@@ -5,10 +5,10 @@ files:
     destination: /home/ubuntu/lab-aws/server
 hooks:
   BeforeInstall:
-    - location: /home/ubuntu/lab-aws/server/scripts/before_install.sh
+    - location: server/scripts/before_install.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: /home/ubuntu/lab-aws/server/scripts/after_install.sh
+    - location: server/scripts/after_install.sh
       timeout: 300
       runas: root
