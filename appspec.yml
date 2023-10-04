@@ -1,14 +1,14 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /home/ubuntu/lab-aws/app
+  - source: /server
+    destination: /home/ubuntu/lab-aws/server
 hooks:
   BeforeInstall:
-    - location: server/scripts/before_install.sh
+    - location: /home/ubuntu/lab-aws/server/scripts/before_install.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: server/scripts/after_install.sh
+    - location: /home/ubuntu/lab-aws/server/scripts/after_install.sh
       timeout: 300
       runas: root
