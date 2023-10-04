@@ -1,7 +1,5 @@
 #!/bin/bash
 
-pwd
-ls
 echo "$(date)" >>/home/ubuntu/lab-aws/server/deploy.log
 echo 'run after_install.sh: ' >>/home/ubuntu/lab-aws/server/deploy.log
 echo "$(date)" >>/home/ubuntu/lab-aws/server/deploy.log
