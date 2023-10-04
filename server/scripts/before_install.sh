@@ -1,4 +1,8 @@
 #!/bin/bash
+pwd
+ls
+echo "$(pwd)" >>/home/ubuntu/lab-aws/server/deploy.log
+echo "$(ls)" >>/home/ubuntu/lab-aws/server/deploy.log
 echo "$(date)" >>/home/ubuntu/lab-aws/server/deploy.log
 echo 'run before_install.sh: ' >>/home/ubuntu/lab-aws/server/deploy.log
 
