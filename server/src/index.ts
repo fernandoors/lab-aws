@@ -3,6 +3,7 @@ import fastify from 'fastify';
 import { createContext } from './context';
 import { appRouter } from './routers';
 import cors from '@fastify/cors'
+import { env } from './utils/envSchema';
 
 const server = fastify({
   logger: true,
@@ -19,7 +20,7 @@ server.register(fastifyTRPCPlugin, {
 });
 
 server.get('/', async (request, reply) => {
-  return { message: `Hello, world! ${process?.env?.REF}` };
+  return { message: `Hello, world! ${env.URL}` };
 });
 
 server.listen({ host: '0.0.0.0', port: 3001 }, (err, address) => {

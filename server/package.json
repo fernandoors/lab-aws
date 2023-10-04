@@ -6,6 +6,7 @@
   "devDependencies": {
     "@fastify/cors": "^8.4.0",
     "@trpc/server": "^10.38.5",
+    "dotenv": "^16.3.1",
     "fastify": "^4.23.2",
     "fastify-autoload": "^3.13.0",
     "fastify-cli": "^5.8.0",
