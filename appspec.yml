@@ -4,11 +4,11 @@ files:
   - source: /
     destination: /home/ubuntu/nodejs-aws-codedeploy-pipeline
 hooks:
-  AfterInstall:
-    - location: server/scripts/after_install.sh
+  BeforeInstall:
+    - location: server/scripts/before_install.sh
       timeout: 300
       runas: root
-  ApplicationStart:
-    - location: server/scripts/application_start.sh
+  AfterInstall:
+    - location: server/scripts/after_install.sh
       timeout: 300
       runas: root
