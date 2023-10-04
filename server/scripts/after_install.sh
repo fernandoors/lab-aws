@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "$(date) run application_start.sh: " >>/home/ubuntu/lab-aws/server/deploy.log
+echo "$(date) run after_install.sh: " >>/home/ubuntu/lab-aws/server/deploy.log
 echo "$(date) pm2 status app-server" >>/home/ubuntu/lab-aws/server/deploy.log
 pm2 status app-server >>/home/ubuntu/lab-aws/server/deploy.log
 
