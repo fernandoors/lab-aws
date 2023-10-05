@@ -13,3 +13,11 @@ npm install >>/home/ubuntu/lab-aws/server/deploy.log
 echo "$(date)" >>/home/ubuntu/lab-aws/server/deploy.log
 echo 'npx tsc -p tsconfig.json --outDir /home/ubuntu/lab-aws/server/dist' >>/home/ubuntu/lab-aws/server/deploy.log
 npx tsc -p tsconfig.json --outDir ./build >>/home/ubuntu/lab-aws/server/deploy.log
+
+echo "$(date)" >>/home/ubuntu/lab-aws/server/deploy.log
+echo 'Replace dist content with the build: cp -Rf ./build/* /home/ubuntu/lab-aws/server/dist/' >>/home/ubuntu/lab-aws/server/deploy.log
+cp -Rf ./build/* /home/ubuntu/lab-aws/server/dist/ >>/home/ubuntu/lab-aws/server/deploy.log
+
+echo "$(date)" >>/home/ubuntu/lab-aws/server/deploy.log
+echo 'Clean build folder: rm -rf ./build/' >>/home/ubuntu/lab-aws/server/deploy.log
+rm -rf ./build/ >>/home/ubuntu/lab-aws/server/deploy.log
