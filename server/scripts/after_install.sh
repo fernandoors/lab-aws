@@ -10,3 +10,4 @@ pm2 status app-server
 
 echo "$(date) 'pm2 restart app-server --update-env'" >>/home/ubuntu/lab-aws/server/deploy.log
 pm2 restart app-server --update-env >>/home/ubuntu/lab-aws/server/deploy.log
+exit 0

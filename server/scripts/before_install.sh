@@ -12,4 +12,4 @@ npm install >>/home/ubuntu/lab-aws/server/deploy.log
 
 echo "$(date)" >>/home/ubuntu/lab-aws/server/deploy.log
 echo 'npx tsc -p tsconfig.json --outDir /home/ubuntu/lab-aws/server/dist' >>/home/ubuntu/lab-aws/server/deploy.log
-npx tsc -p tsconfig.json --outDir /home/ubuntu/lab-aws/server/dist >>/home/ubuntu/lab-aws/server/deploy.log
+npx tsc -p tsconfig.json --outDir ./build >>/home/ubuntu/lab-aws/server/deploy.log
